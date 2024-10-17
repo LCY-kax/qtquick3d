@@ -1,0 +1,11 @@
+<RCC>
+    <qresource prefix="/">
+        <file>meshes/___2_2.mesh</file>
+        <file>meshes/___2_1.mesh</file>
+        <file>meshes/___2.mesh</file>
+        <file>meshes/___1_1.mesh</file>
+        <file>meshes/___1.mesh</file>
+        <file>meshes/webp.jpg</file>
+        <file>meshes/laneline.mesh</file>
+    </qresource>
+</RCC>
