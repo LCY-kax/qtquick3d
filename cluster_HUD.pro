@@ -13,6 +13,7 @@ SOURCES += \
 
 RESOURCES += QML/qml.qrc \
             obj/obj.qrc \
+            images/images.qrc
 
 QML_IMPORT_PATH =
 QML_DESIGNER_IMPORT_PATH =

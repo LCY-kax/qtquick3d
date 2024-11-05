@@ -6,5 +6,6 @@
         <file>ExampleMaterial.qml</file>
         <file>example.vert</file>
         <file>example.frag</file>
+        <file>Navi.qml</file>
     </qresource>
 </RCC>

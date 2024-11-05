@@ -1,0 +1,284 @@
+import QtQuick 2.0
+
+
+Item {
+    width: 220
+    height: 220
+    property int navigationoptions: 1
+    property int turnsituation:0
+    property int displaycontent:0
+
+    Image{
+        width: 200
+        height: 200
+        source: {
+            if(navigationoptions===2){
+                if(turnsituation>72) turnsituation=0;
+                switch(turnsituation){
+                case 0:
+                    return ""
+                case 1:
+                    return "qrc:/B区副显示/腾讯有彩/map_ic_route_guide_turn_1.png"
+                case 2:
+                    return "qrc:/B区副显示/腾讯有彩/map_ic_route_guide_turn_2.png"
+                case 3:
+                    return "qrc:/B区副显示/腾讯有彩/map_ic_route_guide_turn_3.png"
+                case 4:
+                    return "qrc:/B区副显示/腾讯有彩/map_ic_route_guide_turn_4.png"
+                case 5:
+                    return "qrc:/B区副显示/腾讯有彩/map_ic_route_guide_turn_5.png"
+                case 6:
+                    return "qrc:/B区副显示/腾讯有彩/map_ic_route_guide_turn_6.png"
+                case 7:
+                    return "qrc:/B区副显示/腾讯有彩/map_ic_route_guide_turn_7.png"
+                case 8:
+                    return "qrc:/B区副显示/腾讯有彩/map_ic_route_guide_turn_8.png"
+                case 9:
+                    return "qrc:/B区副显示/腾讯有彩/map_ic_route_guide_turn_10.png"
+                case 10:
+                    return "qrc:/B区副显示/腾讯有彩/map_ic_route_guide_turn_11.png"
+                case 11:
+                    return "qrc:/B区副显示/腾讯有彩/map_ic_route_guide_turn_12.png"
+                case 12:
+                    return "qrc:/B区副显示/腾讯有彩/map_ic_route_guide_turn_13.png"
+                case 13:
+                    return "qrc:/B区副显示/腾讯有彩/map_ic_route_guide_turn_14.png"
+                case 14:
+                    return "qrc:/B区副显示/腾讯有彩/map_ic_route_guide_turn_15.png"
+                case 15:
+                    return "qrc:/B区副显示/腾讯有彩/map_ic_route_guide_turn_16.png"
+                case 16:
+                    return "qrc:/B区副显示/腾讯有彩/map_ic_route_guide_turn_17.png"
+                case 17:
+                    return "qrc:/B区副显示/腾讯有彩/map_ic_route_guide_turn_18.png"
+                case 18:
+                    return "qrc:/B区副显示/腾讯有彩/map_ic_route_guide_turn_20.png"
+                case 19:
+                    return "qrc:/B区副显示/腾讯有彩/map_ic_route_guide_turn_21.png"
+                case 20:
+                    return "qrc:/B区副显示/腾讯有彩/map_ic_route_guide_turn_22.png"
+                case 21:
+                    return "qrc:/B区副显示/腾讯有彩/map_ic_route_guide_turn_23.png"
+                case 22:
+                    return "qrc:/B区副显示/腾讯有彩/map_ic_route_guide_turn_24.png"
+                case 23:
+                    return "qrc:/B区副显示/腾讯有彩/map_ic_route_guide_turn_25.png"
+                case 24:
+                    return "qrc:/B区副显示/腾讯有彩/map_ic_route_guide_turn_26.png"
+                case 25:
+                    return "qrc:/B区副显示/腾讯有彩/map_ic_route_guide_turn_27.png"
+                case 26:
+                    return "qrc:/B区副显示/腾讯有彩/map_ic_route_guide_turn_28.png"
+                case 27:
+                    return "qrc:/B区副显示/腾讯有彩/map_ic_route_guide_turn_30.png"
+                case 28:
+                    return "qrc:/B区副显示/腾讯有彩/map_ic_route_guide_turn_31.png"
+                case 29:
+                    return "qrc:/B区副显示/腾讯有彩/map_ic_route_guide_turn_32.png"
+                case 30:
+                    return "qrc:/B区副显示/腾讯有彩/map_ic_route_guide_turn_33.png"
+                case 31:
+                    return "qrc:/B区副显示/腾讯有彩/map_ic_route_guide_turn_34.png"
+                case 32:
+                    return "qrc:/B区副显示/腾讯有彩/map_ic_route_guide_turn_35.png"
+                case 33:
+                    return "qrc:/B区副显示/腾讯有彩/map_ic_route_guide_turn_36.png"
+                case 34:
+                    return "qrc:/B区副显示/腾讯有彩/map_ic_route_guide_turn_37.png"
+                case 35:
+                    return "qrc:/B区副显示/腾讯有彩/map_ic_route_guide_turn_38.png"
+                case 36:
+                    return "qrc:/B区副显示/腾讯有彩/map_ic_route_guide_turn_40.png"
+                case 37:
+                    return "qrc:/B区副显示/腾讯有彩/map_ic_route_guide_turn_41.png"
+                case 38:
+                    return "qrc:/B区副显示/腾讯有彩/map_ic_route_guide_turn_42.png"
+                case 39:
+                    return "qrc:/B区副显示/腾讯有彩/map_ic_route_guide_turn_43.png"
+                case 40:
+                    return "qrc:/B区副显示/腾讯有彩/map_ic_route_guide_turn_44.png"
+                case 41:
+                    return "qrc:/B区副显示/腾讯有彩/map_ic_route_guide_turn_45.png"
+                case 42:
+                    return "qrc:/B区副显示/腾讯有彩/map_ic_route_guide_turn_46.png"
+                case 43:
+                    return "qrc:/B区副显示/腾讯有彩/map_ic_route_guide_turn_47.png"
+                case 44:
+                    return "qrc:/B区副显示/腾讯有彩/map_ic_route_guide_turn_48.png"
+                case 45:
+                    return "qrc:/B区副显示/腾讯有彩/map_ic_route_guide_turn_51.png"
+                case 46:
+                    return "qrc:/B区副显示/腾讯有彩/map_ic_route_guide_turn_52.png"
+                case 47:
+                    return "qrc:/B区副显示/腾讯有彩/map_ic_route_guide_turn_53.png"
+                case 48:
+                    return "qrc:/B区副显示/腾讯有彩/map_ic_route_guide_turn_54.png"
+                case 49:
+                    return "qrc:/B区副显示/腾讯有彩/map_ic_route_guide_turn_55.png"
+                case 50:
+                    return "qrc:/B区副显示/腾讯有彩/map_ic_route_guide_turn_56.png"
+                case 51:
+                    return "qrc:/B区副显示/腾讯有彩/map_ic_route_guide_turn_57.png"
+                case 52:
+                    return "qrc:/B区副显示/腾讯有彩/map_ic_route_guide_turn_58.png"
+                case 53:
+                    return "qrc:/B区副显示/腾讯有彩/map_ic_route_guide_turn_59.png"
+                case 54:
+                    return "qrc:/B区副显示/腾讯有彩/map_ic_route_guide_turn_60.png"
+                case 55:
+                    return "qrc:/B区副显示/腾讯有彩/map_ic_route_guide_turn_60.png"
+                case 56:
+                    return "qrc:/B区副显示/腾讯有彩/map_ic_route_guide_turn_60.png"
+                case 57:
+                    return "qrc:/B区副显示/腾讯有彩/map_ic_route_guide_turn_63.png"
+                case 58:
+                    return "qrc:/B区副显示/腾讯有彩/map_ic_route_guide_turn_63_1.png"
+                case 59:
+                    return "qrc:/B区副显示/腾讯有彩/map_ic_route_guide_turn_63_2.png"
+                case 60:
+                    return "qrc:/B区副显示/腾讯有彩/map_ic_route_guide_turn_64.png"
+                case 61:
+                    return "qrc:/B区副显示/腾讯有彩/map_ic_route_guide_turn_64.png"
+                case 62:
+                    return "qrc:/B区副显示/腾讯有彩/map_ic_route_guide_turn_66.png"
+                case 63:
+                    return "qrc:/B区副显示/腾讯有彩/map_ic_route_guide_turn_81.png"
+                case 64:
+                    return "qrc:/B区副显示/腾讯有彩/map_ic_route_guide_turn_82.png"
+                case 65:
+                    return "qrc:/B区副显示/腾讯有彩/map_ic_route_guide_turn_83.png"
+                case 66:
+                    return "qrc:/B区副显示/腾讯有彩/map_ic_route_guide_turn_84.png"
+                case 67:
+                    return "qrc:/B区副显示/腾讯有彩/map_ic_route_guide_turn_85.png"
+                case 68:
+                    return "qrc:/B区副显示/腾讯有彩/map_ic_route_guide_turn_86.png"
+                case 69:
+                    return "qrc:/B区副显示/腾讯有彩/map_ic_route_guide_turn_87.png"
+                case 70:
+                    return "qrc:/B区副显示/腾讯有彩/map_ic_route_guide_turn_88.png"
+                case 71:
+                    return "qrc:/B区副显示/腾讯有彩/map_ic_route_guide_turn_89.png"
+                case 72:
+                    return "qrc:/B区副显示/腾讯有彩/map_ic_route_guide_turn_90.png"
+                 default:
+                     return ""
+
+                }
+            }else{
+                if(turnsituation>84) turnsituation=0;
+                switch(turnsituation){
+                case 0:
+                    return ""
+                case 1:
+                    return "qrc:/B区副显示/高德有彩/map_ic_route_guide_turn_1.png"
+                case 2:
+                    return "qrc:/B区副显示/高德有彩/map_ic_route_guide_turn_2.png"
+                case 3:
+                    return "qrc:/B区副显示/高德有彩/map_ic_route_guide_turn_3.png"
+                case 4:
+                    return "qrc:/B区副显示/高德有彩/map_ic_route_guide_turn_4.png"
+                case 5:
+                    return "qrc:/B区副显示/高德有彩/map_ic_route_guide_turn_5.png"
+                case 6:
+                    return "qrc:/B区副显示/高德有彩/map_ic_route_guide_turn_6.png"
+                case 7:
+                    return "qrc:/B区副显示/高德有彩/map_ic_route_guide_turn_7.png"
+                case 8:
+                    return "qrc:/B区副显示/高德有彩/map_ic_route_guide_turn_8.png"
+                case 9:
+                    return "qrc:/B区副显示/高德有彩/map_ic_route_guide_turn_9.png"
+                case 10:
+                    return "qrc:/B区副显示/高德有彩/map_ic_route_guide_turn_10.png"
+                case 11:
+                    return "qrc:/B区副显示/高德有彩/map_ic_route_guide_turn_11.png"
+                case 12:
+                    return "qrc:/B区副显示/高德有彩/map_ic_route_guide_turn_12.png"
+                case 13:
+                    return "qrc:/B区副显示/高德有彩/map_ic_route_guide_turn_13.png"
+                case 14:
+                    return "qrc:/B区副显示/高德有彩/map_ic_route_guide_turn_14.png"
+                case 15:
+                    return "qrc:/B区副显示/高德有彩/map_ic_route_guide_turn_15.png"
+                case 16:
+                    return "qrc:/B区副显示/高德有彩/map_ic_route_guide_turn_16.png"
+                case 17:
+                    return "qrc:/B区副显示/高德有彩/map_ic_route_guide_turn_17.png"
+                case 18:
+                    return "qrc:/B区副显示/高德有彩/map_ic_route_guide_turn_18.png"
+                case 19:
+                    return "qrc:/B区副显示/高德有彩/map_ic_route_guide_turn_19.png"
+                case 20:
+                    return "qrc:/B区副显示/高德有彩/map_ic_route_guide_turn_20.png"
+                case 21:
+                    return "qrc:/B区副显示/高德有彩/map_ic_route_guide_turn_21.png"
+                case 22:
+                    return "qrc:/B区副显示/高德有彩/map_ic_route_guide_turn_22.png"
+                case 23:
+                    return "qrc:/B区副显示/高德有彩/map_ic_route_guide_turn_23.png"
+                case 24:
+                    return "qrc:/B区副显示/高德有彩/map_ic_route_guide_turn_24.png"
+                case 25:
+                    return "qrc:/B区副显示/高德有彩/map_ic_route_guide_turn_25.png"
+                case 26:
+                    return "qrc:/B区副显示/高德有彩/map_ic_route_guide_turn_26.png"
+                case 27:
+                    return "qrc:/B区副显示/高德有彩/map_ic_route_guide_turn_28.png"
+                case 28:
+                    return "qrc:/B区副显示/高德有彩/map_ic_route_guide_turn_28.png"
+                case 29:
+                    return "qrc:/B区副显示/高德有彩/map_ic_route_guide_turn_29.png"
+                case 30:
+                    return "qrc:/B区副显示/高德有彩/map_ic_route_guide_turn_30.png"
+                case 31:
+                    return ""
+                case 32:
+                    return "qrc:/B区副显示/高德有彩/map_ic_route_guide_turn_50.png"
+                case 33:
+                    return "qrc:/B区副显示/高德有彩/map_ic_route_guide_turn_51.png"
+                case 34:
+                    return "qrc:/B区副显示/高德有彩/map_ic_route_guide_turn_52.png"
+                case 35:
+                    return "qrc:/B区副显示/高德有彩/map_ic_route_guide_turn_53.png"
+                case 36:
+                    return "qrc:/B区副显示/高德有彩/map_ic_route_guide_turn_54.png"
+                case 37:
+                    return "qrc:/B区副显示/高德有彩/map_ic_route_guide_turn_55.png"
+                case 38:
+                    return "qrc:/B区副显示/高德有彩/map_ic_route_guide_turn_58.png"
+                case 39:
+                    return "qrc:/B区副显示/高德有彩/map_ic_route_guide_turn_59.png"
+                case 40:
+                    return "qrc:/B区副显示/高德有彩/map_ic_route_guide_turn_60.png"
+                case 41:
+                    return "qrc:/B区副显示/高德有彩/map_ic_route_guide_turn_61.png"
+                case 42:
+                    return "qrc:/B区副显示/高德有彩/map_ic_route_guide_turn_62.png"
+                case 43:
+                    return "qrc:/B区副显示/高德有彩/map_ic_route_guide_turn_63.png"
+                case 44:
+                    return "qrc:/B区副显示/高德有彩/map_ic_route_guide_turn_64.png"
+                case 45:
+                    return "qrc:/B区副显示/高德有彩/map_ic_route_guide_turn_65.png"
+                case 46:
+                    return "qrc:/B区副显示/高德有彩/map_ic_route_guide_turn_66.png"
+                case 47:
+                    return "qrc:/B区副显示/高德有彩/map_ic_route_guide_turn_67.png"
+                case 48:
+                    return "qrc:/B区副显示/高德有彩/map_ic_route_guide_turn_68.png"
+                case 49:
+                    return "qrc:/B区副显示/高德有彩/map_ic_route_guide_turn_69.png"
+                default:
+                    return ""
+
+                }
+            }
+
+
+        }
+        visible: displaycontent
+
+    }
+
+
+}

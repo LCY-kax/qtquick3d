@@ -53,6 +53,8 @@ import QtQuick.Window 2.14
 //! [extra import]
 import QtGraphicalEffects 1.14
 //! [extra import]
+import QtQuick.Layouts 1.14
+import QtQuick.Controls 1.0
 
 Window {
     id:w
@@ -95,6 +97,73 @@ Window {
         id: hud_3D
         anchors.fill: parent
     }
+
+    RowLayout {
+        anchors.fill: parent
+
+        Navi {
+            id: navi
+            // 设置 Navi 的对齐方式为右对齐
+            //            anchors.right: parent.right
+            //            anchors.rightMargin: 150
+            //            // 设置 Navi 的垂直对齐方式为居中
+            //            anchors.verticalCenter: parent.verticalCenter
+            // 使用 Layout.alignment 进行对齐
+            Layout.alignment: Qt.AlignRight | Qt.AlignVCenter
+            // 你可以使用 Layout.margins 设置边距
+            Layout.rightMargin: 150
+        }
+    }
+
+    Row {
+        x:1130
+        z:7
+        anchors.top: parent.top
+        spacing: 5
+        TextField{
+            width: 178
+            placeholderText:"ID高德1-49，腾讯1-72"
+            onEditingFinished: {
+                navi.turnsituation =text;
+                 console.log("ID"+text)
+            }
+        }
+//        TextField{
+//            width: 20
+//            placeholderText:"输入1：'高德' 2：'腾讯'"
+//            onEditingFinished: {
+//                if(text === 1){
+//                    navi.navigationoptions = 1;
+//                    console.log("index change1")
+//                }else{
+//                    navi.navigationoptions = 2;
+//                    console.log("index change2")
+//                }
+//            }
+//        }
+        ComboBox {
+            id:comboBox
+            model: ["高德", "腾讯"]
+            onCurrentIndexChanged: {
+                if(currentIndex === 1){
+                    navi.navigationoptions = 1;
+//                    console.log("index change1")
+                }else{
+                    navi.navigationoptions = 2;
+//                    console.log("index change2")
+                }
+            }
+        }
+        Button {
+            text: "显示"
+            onClicked: {
+                if(navi.displaycontent===1)  {  navi.displaycontent=0;}else{ navi.displaycontent=1;}
+
+            }
+        }
+
+    }
+
 
 
 }
